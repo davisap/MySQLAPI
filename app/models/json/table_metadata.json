@@ -1,0 +1,272 @@
+{
+    "amazon_data": {
+        "name": "amazon_data",
+        "description": "Products purchased on Amazon",
+        "columns": [
+            {
+                "name": "order_date",
+                "type": "timestamp"
+            },
+            {
+                "name": "asin_isbn",
+                "type": "character"
+            },
+            {
+                "name": "item",
+                "type": "character"
+            },
+            {
+                "name": "total_cost",
+                "type": "character"
+            },
+            {
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "condition_description",
+                "type": "character"
+            },
+            {
+                "name": "order_status",
+                "type": "character"
+            },
+            {
+                "name": "payment_instrument",
+                "type": "character"
+            },
+            {
+                "name": "seller",
+                "type": "character"
+            },
+            {
+                "name": "buyer",
+                "type": "character"
+            },
+            {
+                "name": "shipment_date",
+                "type": "timestamp"
+            },
+            {
+                "name": "shipment_address",
+                "type": "character"
+            },
+            {
+                "name": "unspsc_code",
+                "type": "character"
+            },
+            {
+                "name": "tracking_number",
+                "type": "character"
+            },
+            {
+                "name": "category",
+                "type": "character"
+            }
+        ]
+    },
+    "doordash": {
+        "name": "doordash",
+        "description": "Items ordered on Doordash",
+        "columns": [
+            {
+                "name": "ordered_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "store",
+                "type": "character"
+            },
+            {
+                "name": "item",
+                "type": "character"
+            },
+            {
+                "name": "unit_price",
+                "type": "double precision"
+            },
+            {
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "subtotal",
+                "type": "double precision"
+            },
+            {
+                "name": "delivered_time",
+                "type": "timestamp"
+            },
+            {
+                "name": "delivery_address",
+                "type": "character"
+            },
+            {
+                "name": "category",
+                "type": "character"
+            }
+        ]
+    },
+    "google_search_history": {
+        "name": "google_search_history",
+        "description": "Google search history",
+        "columns": [
+            {
+                "name": "search_date",
+                "type": "timestamp"
+            },
+            {
+                "name": "keyword",
+                "type": "character"
+            },
+            {
+                "name": "search_count",
+                "type": "integer"
+            }
+        ]
+    },
+    "google_visit_history": {
+        "name": "google_visit_history",
+        "description": "URLs visited on the internet",
+        "columns": [
+            {
+                "name": "last_visit",
+                "type": "timestamp"
+            },
+            {
+                "name": "title",
+                "type": "character"
+            },
+            {
+                "name": "manual_visits",
+                "type": "integer"
+            },
+            {
+                "name": "url",
+                "type": "character"
+            },
+            {
+                "name": "visit_count",
+                "type": "integer"
+            }
+        ]
+    },
+    "twitter": {
+        "name": "twitter",
+        "description": "Actions that have taken place on Twitter, such as likes, tweets or new followers.",
+        "columns": [
+            {
+                "name": "created_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "entity_type",
+                "type": "character"
+            },
+            {
+                "name": "user_name",
+                "type": "character"
+            },
+            {
+                "name": "profile_image_url",
+                "type": "character"
+            },
+            {
+                "name": "associated_text",
+                "type": "character"
+            }
+        ]
+    },
+    "uber_eats_order": {
+        "name": "uber_eats_order",
+        "description": "Items ordered on UberEats",
+        "columns": [
+            {
+                "name": "ordered_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "order_status",
+                "type": "character"
+            },
+            {
+                "name": "city",
+                "type": "character"
+            },
+            {
+                "name": "store",
+                "type": "character"
+            },
+            {
+                "name": "item",
+                "type": "character"
+            },
+            {
+                "name": "unit_price",
+                "type": "character"
+            },
+            {
+                "name": "qty",
+                "type": "integer"
+            },
+            {
+                "name": "order_total",
+                "type": "double precision"
+            },
+            {
+                "name": "currency",
+                "type": "character"
+            },
+            {
+                "name": "delivery_address",
+                "type": "character"
+            }
+        ]
+    },
+    "uber_trip": {
+        "name": "uber_trip",
+        "description": "Trips embarked on via Uber",
+        "columns": [
+            {
+                "name": "requested_on",
+                "type": "timestamp"
+            },
+            {
+                "name": "city",
+                "type": "character"
+            },
+            {
+                "name": "requested_from",
+                "type": "character"
+            },
+            {
+                "name": "requested_to",
+                "type": "character"
+            },
+            {
+                "name": "fare",
+                "type": "double precision"
+            },
+            {
+                "name": "currency",
+                "type": "character"
+            },
+            {
+                "name": "distance",
+                "type": "double precision"
+            },
+            {
+                "name": "status",
+                "type": "character"
+            },
+            {
+                "name": "product",
+                "type": "character"
+            },
+            {
+                "name": "category",
+                "type": "character"
+            }
+        ]
+    }
+}
